@@ -8,7 +8,6 @@ import helpers.DataGenerator;
 import net.bytebuddy.asm.Advice;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-
 import javax.xml.crypto.Data;
 import java.awt.*;
 import java.awt.event.KeyEvent;

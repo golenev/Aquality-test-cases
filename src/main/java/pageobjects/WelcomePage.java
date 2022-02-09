@@ -15,12 +15,9 @@ public class WelcomePage extends Form {
     private IButton confirmCookiesBtn = getElementFactory().getButton(By.xpath("//button[normalize-space()='Not really, no']"),"Confirm cookies");
     private ITextBox timerData = getElementFactory().getTextBox(By.xpath("//div[@class='timer timer--white timer--center']"),"timer");
 
-
     public WelcomePage() {
         super(By.xpath("//a[normalize-space()='HERE']"), "HERE button");
     }
-
-
 
     public void clickNext(){
         btnHere.click();
@@ -35,10 +32,10 @@ public class WelcomePage extends Form {
        return timerData.getText();
     }
     public boolean checkStateForm(){
-       return hideFormBtn.state().waitForNotDisplayed(Duration.ofMillis(3000));
+       return hideFormBtn.state().waitForNotDisplayed();
     }
     public boolean checkStateCookies(){
-        return confirmCookiesBtn.state().waitForNotDisplayed(Duration.ofMillis(12000));
+        return confirmCookiesBtn.state().waitForNotDisplayed();
     }
 
 

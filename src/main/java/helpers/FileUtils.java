@@ -8,9 +8,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class FileUtils {
-    public static boolean propertyFileExists(String path) {
-        return new File(path).exists();
-    }
+
     public static Properties loadProperties(String path) {
         Properties properties = new Properties();
         try (FileInputStream fis = new FileInputStream(path)) {

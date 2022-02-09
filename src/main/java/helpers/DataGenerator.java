@@ -13,10 +13,8 @@ public class DataGenerator {
         return RandomStringUtils.random( 15, characters );
     }
 
-
     public static String createString() {
         String characters = "abcdefghijklmnopqrstuvwxyz0123456789";
-
         return RandomStringUtils.random( (int) (3 + Math.random() * 10), characters );
     }
 
@@ -26,8 +24,5 @@ public class DataGenerator {
         int randomSelect = (int) givenList.get(random.nextInt(givenList.size()));
         return randomSelect;
     }
-
-
-
 
 }
