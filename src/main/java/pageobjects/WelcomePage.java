@@ -3,10 +3,7 @@ package pageobjects;
 import aquality.selenium.elements.interfaces.IButton;
 import aquality.selenium.elements.interfaces.ITextBox;
 import aquality.selenium.forms.Form;
-import helpers.RegExHelper;
 import org.openqa.selenium.By;
-
-import java.time.Duration;
 
 public class WelcomePage extends Form {
 

@@ -5,7 +5,6 @@ import aquality.selenium.elements.interfaces.ICheckBox;
 import aquality.selenium.forms.Form;
 import helpers.ConfigProperties;
 import helpers.DataGenerator;
-import helpers.RobotUtils;
 import net.bytebuddy.asm.Advice;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -29,15 +28,21 @@ public class InterestsPage extends Form {
                 randomCheckBoxTwo.check();
                 randomCheckBoxThree.check();
     }
-
-    public void uploadImage()  {
+    public void uploadImage() throws AWTException {
         uploadBtn.click();
         /*
         копипаст из буфера обмена. Как лучше сделать, не знаю
          */
 
-        RobotUtils.copyPasteByRobo();
+        Robot robot = new Robot();
+        robot.keyPress(KeyEvent.VK_CONTROL);
+        robot.keyPress(KeyEvent.VK_V);
+        robot.keyRelease(KeyEvent.VK_V);
+        robot.keyRelease(KeyEvent.VK_CONTROL);
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
         nextBtn.click();
+
     }
 
 }
