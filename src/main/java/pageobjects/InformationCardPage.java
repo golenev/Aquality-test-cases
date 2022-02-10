@@ -20,7 +20,6 @@ public class InformationCardPage extends Form {
     private IButton selectFromDropDown = getElementFactory().getButton(By.xpath("//div[normalize-space()='" + ConfigProperties.get("domain") + "']"), "выбор домена после точки");
 
 
-
     public InformationCardPage() {
         super(By.xpath("//input[@placeholder='Choose Password']"), "Field for entering password");
     }
@@ -33,12 +32,6 @@ public class InformationCardPage extends Form {
         selectFromDropDown.click();
         termsConditionsChkBx.check();
         nextBtn.click();
-
-
-
     }
-
-
-
 
 }

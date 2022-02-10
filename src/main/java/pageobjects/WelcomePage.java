@@ -38,6 +38,4 @@ public class WelcomePage extends Form {
         return confirmCookiesBtn.state().waitForNotDisplayed();
     }
 
-
-
 }

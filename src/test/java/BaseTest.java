@@ -18,8 +18,8 @@ public abstract class BaseTest {
         browser.waitForPageToLoad();
     }
 
-   /* @AfterMethod
+    @AfterMethod
     public void tearDown() {
         browser.quit();
-    }*/
+    }
 }
