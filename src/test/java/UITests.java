@@ -5,7 +5,6 @@ import pageobjects.InformationCardPage;
 import pageobjects.InterestsPage;
 import pageobjects.WelcomePage;
 
-import java.awt.*;
 
 public class UITests extends BaseTest{
 
